@@ -10,5 +10,4 @@
 
 各リポジトリのIssue、または以下のSlackワークスペースのQAチャンネルなどをご利用ください。
 
-- Sacloud Slackワークスペース: https://sacloud.slack.com
-- ワークスペースへの参加: https://join.slack.com/t/sacloud/shared_invite/zt-ohsdpv2t-_Bi1_F0jDAAmWjoMQCmAxg
+Discord: https://discord.gg/yUEDN8hbMf
