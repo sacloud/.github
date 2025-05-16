@@ -1,0 +1,30 @@
+name: Feature request
+description: 機能追加の提案
+labels: "waiting-for-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [CONTRIBUTINGガイドライン](https://github.com/sacloud/.github/blob/main/CONTRIBUTING.md)をまずチェックしてください。
+  - type: textarea
+    id: description
+    attributes:
+      label: 提案機能に関しての説明
+      description: |
+        どういう機能でなぜ必要なのか簡潔に書いてください
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: 代替手段等の説明
+      description: もし代替手段などで解決できるならそちらも書いてもらえると多角的に評価できます
+    validations:
+      required: false
+  - type: textarea
+    id: addtional-context
+    attributes:
+      label: 追加情報
+      description: 何か他に書いておくべき情報があるならここに書いてください
+    validations:
+      required: false

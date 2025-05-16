@@ -1,0 +1,53 @@
+name: Bug Report
+description: バグレポートの作成
+labels: "waiting-for-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [CONTRIBUTINGガイドライン](https://github.com/sacloud/.github/blob/main/CONTRIBUTING.md)をまずチェックしてください。
+  - type: textarea
+    id: description
+    attributes:
+      label: 不具合の説明と期待する動作
+      description: わかりやすく不具合の詳細を書いてください
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順
+      description: 不具合を再現する方法を書いてください
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 動作環境
+      description: |
+        ライブラリ・ツール・言語・OS等のバージョンを書いてください
+        Note: 最新バージョンでも問題が再現するか確認してください
+      value: |
+        - ライブラリのバージョン:
+        - ツール・言語のバージョン:
+        - OSのバージョン:
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: conf_or_code
+    attributes:
+      label: 設定やコード
+      description: |
+        ツールの設定・ライブラリを使ったコード・実行したコマンド等を貼ってください
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ
+      description: エラーログ等あれば貼ってください
+      render: shell
+    validations:
+      required: false

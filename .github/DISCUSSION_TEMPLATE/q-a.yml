@@ -1,0 +1,39 @@
+title: "[Q&A]"
+labels: ["Q&A"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        気軽に質問するためのカテゴリです。
+  - type: textarea
+    id: question
+    attributes:
+      label: やりたいこと
+      description: |
+        困っていることについて書いてください。望む挙動と実際の結果についても書いてあると回答しやすくなります。
+    validations:
+      required: true
+  - type: textarea
+    id: try
+    attributes:
+      label: 試した内容
+      description: |
+        どのような設定・コードを試して望んだ挙動を実現しようとしたのかを書いてください。
+      render: markdown
+  - type: textarea
+    id: environments
+    attributes:
+      label: 試した環境
+      description: |
+        スムーズに回答するため、試した環境について記入してください。
+      value: |
+        - ライブラリ・ツールのバージョン:
+        - OSのバージョン:
+      render: markdown
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログの内容
+      description: |
+        ログがある場合は貼ってください。エラーログがあるとより回答しやすくなります。
+      render: shell
